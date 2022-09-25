@@ -21,7 +21,7 @@ def get_time():
     return nowtime.strftime("%Y年%m月%d日 %H时%M分 ")+ a
 
 def get_words():
-    words = requests.get("https://api.shadiao.pro/chp")
+    words = requests.get("https://www.zcool.com.cn/u/23926067")
     if words.status_code != 200:
         return get_words()
     return words.json()['data']['text']
